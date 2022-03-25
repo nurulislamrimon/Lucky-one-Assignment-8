@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import Products from '../Products/Products';
+import Wishlist from '../Wishlist/Wishlist';
 
 const CalligraphyShop = () => {
     // get products data
@@ -10,13 +11,20 @@ const CalligraphyShop = () => {
             .then(data => setProducts(data))
     }, [])
 
+    // wishlist
+    const [selectedItem, setSelectedItem] = useState([])
+    const wishlist = id => {
+        const selectedProduct = products.find(product => product.id === id);
+        setSelectedItem(selectedProduct);
+    }
+
     return (
         <section className='main-container'>
             <div className="products-container">
-                {products.map(product => <Products key={product.id} product={product}></Products>)}
+                {products.map(product => <Products key={product.id} product={product} wishlist={wishlist}></Products>)}
             </div>
             <aside>
-                <h1>hello</h1>
+                <Wishlist selectedItem={selectedItem}></Wishlist>
             </aside>
         </section>
     );

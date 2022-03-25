@@ -3,15 +3,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartPlus } from '@fortawesome/free-solid-svg-icons'
 
 const Products = props => {
-    const { name, price, picture } = props.product;
+    const { id, name, price, picture } = props.product;
     return (
-        <div className="product-container">
-            <div className='product'>
+        <div className="card">
+            <div className='product-details'>
                 <img src={picture} alt="" />
                 <h2>{name}</h2>
                 <h4>Price: ${price}</h4>
             </div>
-            <button className='center'>
+            <button onClick={() => props.wishlist(id)} className='center'>
                 <p>Wishlist</p>
                 <FontAwesomeIcon icon={faCartPlus}></FontAwesomeIcon>
             </button>
