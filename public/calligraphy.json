@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "name": "Lula Nichols",
+    "price": 2737,
+    "picture": "images/01.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Callie Aguilar",
+    "price": 3053,
+    "picture": "images/02.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Sybil Todd",
+    "price": 3501,
+    "picture": "images/03.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Daisy Fowler",
+    "price": 2937,
+    "picture": "images/04.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Hawkins Barry",
+    "price": 1877,
+    "picture": "images/05.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Brock James",
+    "price": 3668,
+    "picture": "images/06.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Mary Malone",
+    "price": 1014,
+    "picture": "images/07.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Darla Brown",
+    "price": 1825,
+    "picture": "images/08.jpg"
+  },
+  {
+    "id": 9,
+    "name": "Rosalie Anderson",
+    "price": 3115,
+    "picture": "images/09.jpg"
+  },
+  {
+    "id": 10,
+    "name": "Florence Neal",
+    "price": 3281,
+    "picture": "images/10.jpg"
+  },
+  {
+    "id": 11,
+    "name": "Winifred Cooley",
+    "price": 1240,
+    "picture": "images/11.jpg"
+  },
+  {
+    "id": 12,
+    "name": "Donaldson Morrison",
+    "price": 3084,
+    "picture": "images/12.jpg"
+  }
+]

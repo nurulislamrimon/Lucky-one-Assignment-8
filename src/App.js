@@ -1,11 +1,12 @@
 import './App.css';
+import CalligraphyShop from './components/CalligraphyShop/CalligraphyShop';
 
 function App() {
 
   return (
-    <div className="App">
-      <img src="images/01.jpg" height={200} alt="" />
-    </div>
+    <main>
+      <CalligraphyShop></CalligraphyShop>
+    </main>
   );
 }
 
