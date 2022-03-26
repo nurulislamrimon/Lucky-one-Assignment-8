@@ -12,10 +12,12 @@ const CalligraphyShop = () => {
     }, [])
 
     // wishlist
-    const [selectedItem, setSelectedItem] = useState([])
+    const [selectedItems, setSelectedItems] = useState([])
     const wishlist = id => {
+        const selectedTotalItem = [];
         const selectedProduct = products.find(product => product.id === id);
-        setSelectedItem(selectedProduct);
+        selectedTotalItem.push(...selectedItems, selectedProduct);
+        setSelectedItems(selectedTotalItem);
     }
 
     return (
@@ -24,7 +26,7 @@ const CalligraphyShop = () => {
                 {products.map(product => <Products key={product.id} product={product} wishlist={wishlist}></Products>)}
             </div>
             <aside>
-                <Wishlist selectedItem={selectedItem}></Wishlist>
+                <Wishlist selectedItem={selectedItems}></Wishlist>
             </aside>
         </section>
     );
