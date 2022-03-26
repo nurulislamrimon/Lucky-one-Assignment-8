@@ -78,7 +78,7 @@ aside{
     border-radius: 50%;
     margin-right: 10px;
 }
-.random-btn{
+.random-btn,.choose-again-btn{
     cursor: pointer;
     margin-top: 10px;
     padding: 5px;
@@ -87,4 +87,11 @@ aside{
 .random-btn:hover{
     background-color: green;
     color: white;
+}
+.choose-again-btn:hover{
+    background-color: red;
+    color: white;
+}
+.recomended-item{
+    color: red;
 }

@@ -28,7 +28,12 @@ const CalligraphyShop = () => {
         const randomlySelected = selectedItems.find(product => product.id === randomNumber);
         if (!randomlySelected) {
             randomSelection();
-        } else (setRandomlySelectedItem(randomlySelected))
+        } else (setRandomlySelectedItem(randomlySelected));
+    }
+    // choose again
+    const clearingWishlist = () => {
+        setRandomlySelectedItem([]);
+        setSelectedItems([]);
     }
 
     return (
@@ -38,8 +43,9 @@ const CalligraphyShop = () => {
             </div>
             <aside>
                 <Wishlist selectedItem={selectedItems}></Wishlist>
-                <h1>Choose: {randomlySelectedItem.name}</h1>
+                <h4>We recommend you: <h1 className='recomended-item'>{randomlySelectedItem.name}</h1></h4>
                 <button onClick={randomSelection} className="random-btn">Choose 1 for me</button>
+                <button onClick={clearingWishlist} className="choose-again-btn">Choose Again</button>
             </aside>
         </section>
     );
