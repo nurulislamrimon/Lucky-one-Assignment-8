@@ -95,3 +95,26 @@ aside{
 .recomended-item{
     color: red;
 }
+
+/* article section  */
+article{
+    padding:0 10px 0;
+}
+article summary{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+@media screen and (max-width:760px) {
+    /* main */
+    .main-container{
+        grid-template-columns: 1fr;
+    }
+    .products-container{
+        order: 1;
+    }
+    article summary{
+font-size: 16px;
+    }
+}
