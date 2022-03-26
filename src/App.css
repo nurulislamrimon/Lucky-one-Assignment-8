@@ -67,6 +67,7 @@ width: 230px;
 aside{
     padding: 20px;
     background-color: rgb(235, 250, 193);
+    overflow: scroll;
 }
 .selected-item{
     display: flex;

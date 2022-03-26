@@ -51,7 +51,7 @@ const CalligraphyShop = () => {
                     <img src={randomlySelectedItem.picture} alt="" />
                     <h1>{randomlySelectedItem.name}</h1>
                 </div>
-                <button onClick={randomSelection} className="random-btn">Choose 1 for me</button>
+                <button onClick={randomSelection} className="random-btn">Recommend me an item</button>
                 <button onClick={clearingWishlist} className="choose-again-btn">Choose Again</button>
             </aside>
             <article>
@@ -60,8 +60,8 @@ const CalligraphyShop = () => {
                     <p>Props used for passing data down for view control but State used for manage data in view controll. Props are immutable but state are mutable. props has better performance but the performance of the state is worst. You can use data in child components by using props but it's impossible to access data from child components. Finally, Props are use to manage externel components and state used for internel components.</p>
                 </details>
                 <details>
-                    <summary>How react works?</summary>
-                    <p>hello</p>
+                    <summary>How useState works?</summary>
+                    <p>Hooks functions lets us hook into react features from function component.React has introduced us useState hook in React 16.8. Now, developers could use state without writing a class. This is a initial state. useState returns a pair of value that contains the current value and a function what's updates this hook.  </p>
                 </details>
             </article>
         </section>
