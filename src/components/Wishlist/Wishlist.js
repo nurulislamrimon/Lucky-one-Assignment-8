@@ -10,11 +10,11 @@ const Wishlist = props => {
 };
 
 const DisplayWishlist = props => {
-    const { name } = props.product;
+    const { name, picture } = props.product;
     return (
-        <div>
+        <div className='selected-item'>
+            <img src={picture} alt="" />
             <h1>{name}</h1>
-            {/* <img src={picture} height="100" alt="" /> */}
         </div>
     )
 }

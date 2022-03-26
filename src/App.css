@@ -66,3 +66,13 @@ aside div{
     position: sticky;
     top: 20px;
 }
+.selected-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+.selected-item img{
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}

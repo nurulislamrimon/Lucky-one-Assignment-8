@@ -20,6 +20,16 @@ const CalligraphyShop = () => {
         setSelectedItems(selectedTotalItem);
     }
 
+    // choose 1 for me
+    const randomSelection = () => {
+        const randomNumber = Math.floor(Math.random() * (12 - 1 + 1) + 1);
+
+        const randomlySelected = selectedItems.find(product => product.id === randomNumber);
+        if (!randomlySelected) {
+            randomSelection();
+        }
+        // just need to randomlySelected item's shown
+    }
     return (
         <section className='main-container'>
             <div className="products-container">
@@ -27,6 +37,7 @@ const CalligraphyShop = () => {
             </div>
             <aside>
                 <Wishlist selectedItem={selectedItems}></Wishlist>
+                <button onClick={randomSelection}>Choose 1 for me</button>
             </aside>
         </section>
     );
